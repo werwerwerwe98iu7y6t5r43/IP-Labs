@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+</head>
+
+<body>
+    <header>
+        <h1>Student card FORM</h1>
+    </header>
+    <main>
+        <form action="." method="post" enctype="multipart/form-data">
+
+            <section>
+                <h2>Personal Information</h2>
+                <fieldset>
+                    <legend>Provide your details</legend>
+
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter a password" required
+                            minlength="3">
+                    </p>
+
+                    <p>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="1" max="123">
+                    </p>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob">
+                    </p>
+
+                    <p>
+                        Gender:<br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </p>
+
+                    <p>
+                        Languages Known:<br>
+                        <input type="checkbox" id="english" name="languages" value="english">
+                        <label for="english">English</label><br>
+                        <input type="checkbox" id="spanish" name="languages" value="spanish">
+                        <label for="spanish">Spanish</label><br>
+                        <input type="checkbox" id="french" name="languages" value="french">
+                        <label for="french">French</label>
+                    </p>
+
+                    <p>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="">Select your country</option>
+                            <option value="england">England</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="germany">Germany</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </section>
+
+            <section>
+                <h2>College Subjects</h2>
+                <fieldset>
+                    <legend>Select your subjects</legend>
+
+                    <p>
+                        <label for="subjects">Choose subjects:</label><br>
+                        <select id="subjects" name="subjects" multiple size="4">
+                            <option value="math">Mathematics</option>
+                            <option value="cs">Computer Science</option>
+                            <option value="physics">Physics</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="english">English</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="interest">Rate your interest in Computer Science:</label>
+                        <input type="range" id="interest" name="interest" min="0" max="10" value="7">
+                    </p>
+                </fieldset>
+            </section>
+
+            <section>
+                <h2>Skills Assessment</h2>
+                <fieldset>
+                    <legend>Assess your skills</legend>
+
+                    <p>
+                        <label for="skills">Describe your skills:</label><br>
+                        <textarea id="skills" name="skills" rows="5" cols="50"
+                            placeholder="List your skills here..."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="resume">Upload your resume:</label>
+                        <input type="file" id="resume" name="resume">
+                    </p>
+
+                    <p>
+                        <label for="color">Pick your favorite color:</label>
+                        <input type="color" id="color" name="color">
+                    </p>
+
+                    <p>
+                        <label for="study-time">Preferred study time:</label>
+                        <input type="time" id="study-time" name="study_time">
+                    </p>
+
+                    <input type="submit" value="Submit Survey">
+                </fieldset>
+            </section>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Student card by Ярослав Пінчук. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
